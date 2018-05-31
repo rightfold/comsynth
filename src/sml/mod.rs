@@ -6,8 +6,10 @@
 
 use std::rc::Rc;
 
+pub mod check;
+
 /// A type in SML. Called a _schema_ because _type_ is a Rust keyword.
-#[derive(Clone, Debug, Eq, PartialEq)]
+#[derive(Clone, Copy, Debug, Eq, PartialEq)]
 pub enum Schema
 {
     /// Booleans.
